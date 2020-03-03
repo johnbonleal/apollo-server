@@ -1,12 +1,12 @@
 const {ApolloServer} = require('apollo-server');
-const typeDefs = require('./src/schema');
-const resolvers = require('./src/resolver');
+const typeDefs = require('./src/schema/schema');
+const resolvers = require('./src/resolvers/resolver');
 
 const server = new ApolloServer({
   typeDefs,
   resolvers
 });
 
-server.listen().then(({port}) => {
-  console.log(`Server listening at port ${port}`);
+server.listen().then(({url}) => {
+  console.log(`Server listening at ${url}`);
 });
