@@ -5,15 +5,22 @@
   "main": "app.js",
   "scripts": {
     "test": "jest",
-    "start": "node_modules/nodemon/bin/nodemon.js app.js"
+    "start": "nodemon --exec babel-node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.10.1",
-    "graphql": "^14.6.0"
+    "apollo-server-express": "^2.10.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.6.0",
+    "mongoose": "^5.9.3"
   },
   "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/node": "^7.8.4",
+    "@babel/preset-env": "^7.8.6",
     "nodemon": "^2.0.2"
   },
   "jest": {
