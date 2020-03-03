@@ -2,14 +2,20 @@
   "name": "apollo-test-server",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node_modules/nodemon/bin/nodemon.js app.js"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "graphql": "^14.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  },
   "jest": {
     "testPathIgnorePatterns": [
       "/node_modules/",
